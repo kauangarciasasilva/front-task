@@ -10,9 +10,9 @@ interface Props{
 export default class NavBar extends React.Component<Props>{
     render(){
         return(
-            <Navbar expand="lg" variant="light" bg="light">
+            <Navbar expand="lg" variant="dark" bg="dark">
                 <Container>
-                  <Navbar.Brand href="#">NavBar</Navbar.Brand>
+                  <Navbar.Brand href="#">ListTask</Navbar.Brand>
                   
                  <span className="navbar-toggler-icon"></span>
                   
