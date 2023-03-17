@@ -4,6 +4,7 @@ import TaskFormComponent from "./components/task-form-component";
 import TaskTabGroup from "./components/task-tab-group";
 import NavBar from "./components/task-navBar";
 
+
 interface Props{
     
 }
@@ -13,21 +14,22 @@ export default class HomeView extends React.Component<Props >{
     render(){
          
         return (
-            <div className ="cortela">
+            
                 
                    
 
-            
+            <div className="cortela">
+                <NavBar/>
 
                 <Container className="vh-100">                    
                     <Row className="d-flex justify-content-center align-items-center h-100">
                         <Col>
-                         <NavBar/>
+                        
                             <Card>
                                
-                                <Card.Body className="py-5 px-5"> 
+                                <Card.Body className="py-5 px-5 corTask"> 
                                         
-                                          
+                                    
                                     <TaskFormComponent />                                    
                                     <TaskTabGroup 
                                         firstTabDescription="Novas Tarefas" 
@@ -38,7 +40,8 @@ export default class HomeView extends React.Component<Props >{
                         </Col>                    
                     </Row>
                 </Container> 
-            </div>           
+                </div>
+        
         );
     }
 }

@@ -9,7 +9,7 @@ interface Props{
 export default class TaskTabGroup extends React.Component<Props>{
     render(){
         return(
-            <div className="cortela">
+            
             <Tabs defaultActiveKey="new" id="uncontrolled-tab-example" className="mb-3">
                                         <Tab eventKey="new" title="Novas">
                                             <ListGroup>
@@ -53,7 +53,7 @@ export default class TaskTabGroup extends React.Component<Props>{
                                             
                                         </Tab>                                        
                                     </Tabs>
-                                    </div>                        
+                                                        
         )
     }
         
