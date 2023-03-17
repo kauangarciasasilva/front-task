@@ -5,6 +5,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginController from './login/controller/login-controller';
+import HomeController from './home/controllers/home-controller';
+
 
 
 const root = ReactDOM.createRoot(
@@ -12,7 +14,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <LoginController />
+    <LoginController/>
+   
   </React.StrictMode>
 );
 

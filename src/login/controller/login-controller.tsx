@@ -12,7 +12,7 @@ interface State{
     todoList: TaskModel[];
 }
 
-export default class HomeController extends React.Component<Props, State>{
+export default class LoginController extends React.Component<Props, State>{
     
     constructor(props){
         super(props);

@@ -16,7 +16,7 @@ export default class NavBar extends React.Component<Props>{
             
                 <Navbar expand="lg" variant="dark" bg="dark">
                     <Container>
-                    <Navbar.Brand href="#" className="px-5">ListTask</Navbar.Brand>
+                    <Navbar.Brand href="#" className="px-0">ListTask</Navbar.Brand>
                     
                     
                     <NavDropdown  className="navbar-toggler-icon" id="collasible-nav-dropdown" title={""}>
@@ -34,7 +34,7 @@ export default class NavBar extends React.Component<Props>{
 
                     </Container>
                     <AvatarGroup>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                    <Avatar alt="Remy Sharp" className="mx-5" src="/static/images/avatar/1.jpg" />
                     </AvatarGroup>
                 
                     

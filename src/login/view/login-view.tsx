@@ -1,5 +1,8 @@
 import React from "react";
 import { Card, Col, Container,Row} from "react-bootstrap";
+import Tela from "./components/telaLogin";
+
+
 
 
 interface Props{
@@ -15,22 +18,19 @@ export default class HomeView extends React.Component<Props >{
                 
                    
 
-            <div className="">
+            <div className="cortela">
                
 
-                <Container className="vh-100">                    
-                    <Row className="d-flex justify-content-center align-items-center h-100">
+                <Container className="vh-100 cortela">                    
+                    <Row >
                         <Col>
                         
-                            <Card>
                                
-                                <Card.Body className="py-5 px-5 corTask"> 
-                                        
-                                    
+                                
+                              <Tela/>
                                                                       
-                                    
-                                </Card.Body>
-                            </Card>
+                                
+                            
                         </Col>                    
                     </Row>
                 </Container> 
