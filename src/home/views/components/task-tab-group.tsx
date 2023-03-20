@@ -1,6 +1,6 @@
 import React from "react";
-import { ListGroup, Row, Col, FormCheck, Tab, Tabs } from "react-bootstrap";
-
+import { ListGroup, Row, Col, FormCheck, Tab, Tabs, Badge } from "react-bootstrap";
+import { ArrowRight, Trash, Pencil } from 'react-bootstrap-icons';
 interface Props{
     firstTabDescription: string;
     secondTabDescription: string;
@@ -21,6 +21,13 @@ export default class TaskTabGroup extends React.Component<Props>{
                                                         <Col>
                                                             <span>No style</span>
                                                         </Col>
+                                                        <Col sm='1'>
+                                                         <Trash/>
+                                                         <Pencil/>
+                                                        </Col>
+                                                       
+                                                        
+                                                       
                                                     </Row>
                                                 </ListGroup.Item>                                    
                                             </ListGroup>
@@ -32,7 +39,13 @@ export default class TaskTabGroup extends React.Component<Props>{
                                                         </Col>                     
                                                         <Col>
                                                             <span>No style</span>
+                                                            
                                                         </Col>
+                                                        <Col sm='1'>
+                                                         <Trash/>
+                                                         <Pencil/>
+                                                        </Col>
+                                                        
                                                     </Row>
                                                 </ListGroup.Item>                                    
                                             </ListGroup>
@@ -44,7 +57,21 @@ export default class TaskTabGroup extends React.Component<Props>{
                                                         </Col>                     
                                                         <Col>
                                                             <span>No style</span>
+                                                           
+                                                           
+                                                           
+                                                          
+                                                          
                                                         </Col>
+                                                        <Col sm='1'className="mx-5">
+                                                         <Trash/>
+                                                         <Col>
+                                                         <Pencil/>
+                                                         </Col>
+                                                         
+                                                         
+                                                        </Col>
+                                                        
                                                     </Row>
                                                 </ListGroup.Item>                                    
                                             </ListGroup>

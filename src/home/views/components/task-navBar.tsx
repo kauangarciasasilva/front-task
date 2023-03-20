@@ -1,7 +1,8 @@
 import React from "react";
-import Avatar from '@mui/material/Avatar'
+
 import AvatarGroup from '@mui/material/AvatarGroup'
-import { Navbar, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, NavDropdown, DropdownButton, ButtonGroup, Dropdown } from "react-bootstrap";
+import { Avatar } from "@mui/material";
 
 interface Props{
 
@@ -33,10 +34,13 @@ export default class NavBar extends React.Component<Props>{
                     
 
                     </Container>
-                    <AvatarGroup>
-                    <Avatar alt="Remy Sharp" className="mx-5" src="/static/images/avatar/1.jpg" />
-                    </AvatarGroup>
-                
+                    
+                    <Avatar alt="Remy Sharp" className="mx-1" src="/static/images/avatar/1.jpg" />
+                    <DropdownButton  variant="dark" bg="dark"as={ButtonGroup }title=""id="bg-vertical-dropdown-2">
+                       
+                        <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+                        <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+                   </DropdownButton>
                     
                     
                     
